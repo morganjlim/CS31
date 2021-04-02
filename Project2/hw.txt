@@ -1,0 +1,80 @@
+1.endlendl
+endline
+
+2. For the number entered this program will print one less than that many amount of spaces
+for the first line then 1 less for each subsequent line, each ending with a "#".
+The program does this the number of times len equals. For example, if 7 is the input
+the program prints 7 lines of spaces (each one less than the previous one) followed by "#".
+
+3.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int len;
+
+	cout << "Enter a number: ";
+	cin >> len;
+
+	for (int i = 0; i < len; i++)
+	{
+		int j(0);
+		while (j != len - i -1)
+		{
+			cout << " ";
+			j++;
+		}
+		cout << "#" << endl;
+	}
+}
+
+4.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int len;
+
+	cout << "Enter a number: ";
+	cin >> len;
+
+	if (len < 0)
+	{
+		return (-1);
+	}
+
+	int left(len);
+
+	do
+	{
+		int j(0);
+		while (j != left - 1)
+		{
+			cout << " ";
+			j++;
+		}
+		cout << "#" << endl;
+		left--;
+	} while (left > 0);
+}
+
+5.
+switch(weekday)
+{
+   case 1:
+      cout << "rainy days and mondays get me down";
+      break;
+   case 2:
+      cout <<"ruby tuesday";
+      break;
+   case 6:
+      cout << "wonderful weekend";
+      break;
+   case 7:
+      cout << "wonderful weekend";
+      break;
+   default:
+      cout << "regular day";
+}
